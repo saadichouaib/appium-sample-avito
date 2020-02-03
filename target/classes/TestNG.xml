@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Avito Android Tests">
+
+<test name="Test cases : All">
+    <classes>
+        <!--<class name="tests.StartAppiumService" />-->
+        <class name="tests.avito.CreateAvitoAndroidDriver" />
+        <class name="tests.avito.LoadingAvitoApp" />
+<!--
+        <class name="tests.avito.InsertionFees.PhoneIF" />
+-->
+<!--
+        <class name="tests.avito.SignUp.SignUp" />
+        &lt;!&ndash; <class name="SignInWrongAccount" /> &ndash;&gt;
+        &lt;!&ndash; <class name="ResetPassword" /> &ndash;&gt;
+
+        <class name="tests.avito.signIn.signIn" />
+        <class name="tests.avito.MyProfil.UpdateProfil" />
+        <class name="tests.avito.signIn.SignOut" />
+
+        <class name="tests.avito.AdInsert.Phone.AdInsertPhoneNewUser" />
+        <class name="tests.avito.AdInsert.Car.AdInsertCar" />
+        <class name="tests.avito.AdInsert.Immo.AdInsertApartment" />
+        <class name="tests.avito.AdInsert.OffreEmploi.AdInsertOffreEmploi" />
+        <class name="tests.avito.AdEdit.AdEdit" />
+        <class name="tests.avito.AdDelete.AdDelete" />
+
+
+        <class name="tests.avito.AdSearch.AdSearchPhone" />
+        <class name="tests.avito.AdSearch.AdSearchOffreEmploi" />
+        <class name="tests.avito.AdSearch.AdSearchApartment" />
+        <class name="tests.avito.SaveSearch.SaveSearch" />
+        <class name="tests.avito.AdSearch.AdSearchCar" />
+
+        <class name="tests.avito.renewAd.BumpAd.BumpAdPayBySMS" />
+        <class name="tests.avito.renewAd.BumpAd.BumpAdPayByCc" />
+        <class name="tests.avito.renewAd.HighlightAd.HighlightAdPayByCc" />
+        <class name="tests.avito.renewAd.PremiumAd.PremiumAdPayByCc" />
+        <class name="tests.avito.renewAd.BumpAd.BumpAdPayByTasshilate" />
+        <class name="tests.avito.renewAd.HighlightAd.HighlightAdPayByTasshilate" />
+        <class name="tests.avito.renewAd.PremiumAd.PremiumAdPayByTasshilate" />
+
+        <class name="tests.avito.Messaging.MessagingVerification" />
+        <class name="tests.avito.AdShare.AdShare" />
+        <class name="tests.avito.adView.adView" />
+        <class name="tests.avito.FavouriteAd.FavouriteAnAd" />-->
+    </classes>
+</test>
+</suite>

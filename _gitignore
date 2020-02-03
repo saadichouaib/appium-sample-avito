@@ -1,0 +1,12 @@
+.gradle/
+out/
+.idea/
+.allure/
+test-output/
+src/main/resources/queue.json
+build/
+build/old/
+build/junitreports/
+build/Avito Android Tests/
+build/allure-results/
+screenshots/

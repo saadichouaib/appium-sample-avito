@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Avito Android Tests">
+    <!--This XML is used only by AwsIntegration
+    All Its classes Should Listen to TestListenerAws.class-->
+<test name="Test cases : All">
+    <classes>
+        <!--<class name="tests.StartAppiumService" />-->
+        <class name="CreateAvitoAndroidDriver" />
+        <class name="LoadingAvitoApp" />
+    </classes>
+</test>
+</suite>

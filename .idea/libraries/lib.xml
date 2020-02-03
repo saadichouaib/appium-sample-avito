@@ -1,0 +1,50 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/httpcore-4.4.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/opencsv-4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/jackson-annotations-2.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/stax2-api-3.1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/freemarker-2.3.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/log4j-1.2.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/jaxb-api-2.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/jackson-core-2.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/flexmark-util-0.28.18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/jetty-util-9.4.8.v20171121.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/allure2-model-jackson-1.0-BETA4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/jackson-module-jaxb-annotations-2.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/jetty-http-9.4.8.v20171121.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/properties-2.0.RC5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/snakeyaml-1.18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/jetty-server-9.4.8.v20171121.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/commons-io-2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/commons-codec-1.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/allure-commandline-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/commons-text-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/jaxb-utils-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/jcommander-1.72.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/allure2-model-api-1.0-BETA4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/commons-collections-3.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/allure1-model-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/allure2-model-pojo-1.0-BETA4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/commons-lang3-3.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/flexmark-0.28.18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/jackson-dataformat-yaml-2.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/allure-plugin-api-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/slf4j-api-1.7.25.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/allure-generator-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/jetty-io-9.4.8.v20171121.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/jackson-databind-2.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/javax.servlet-api-3.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/httpclient-4.5.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/tika-core-1.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/woodstox-core-5.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/slf4j-log4j12-1.7.25.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/commons-beanutils-1.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/.allure/allure-2.6.0/lib/jackson-dataformat-xml-2.9.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

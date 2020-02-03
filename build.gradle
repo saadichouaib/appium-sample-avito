@@ -1,0 +1,114 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://plugins.gradle.org/m2/'
+        }
+    }
+    dependencies {
+        classpath "io.qameta.allure:allure-gradle:2.5"
+        classpath 'com.adarshr:gradle-test-logger-plugin:1.6.0'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'io.qameta.allure'
+apply plugin: 'com.adarshr.test-logger'
+apply plugin: 'distribution'
+
+sourceCompatibility = 1.8
+
+testlogger {
+    theme 'standard'
+    showExceptions false
+    slowThreshold 90000
+    showSummary true
+    showPassed true
+    showSkipped true
+    showFailed true
+    showStandardStreams false
+    showPassedStandardStreams true
+    showSkippedStandardStreams true
+    showFailedStandardStreams true
+}
+
+allure {
+    autoconfigure = true
+    version = '2.6.0'
+    aspectjweaver = true
+    useTestNG{
+        version = '2.6.0'
+    }
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+configurations {
+    agent
+}
+
+//Think to update the pom.xml after any updates on the dependencies, The pom is used to generate a zip-with-dependencies.zip that is usd by aws device farm later
+dependencies {
+    agent "org.aspectj:aspectjweaver:1.8.10"
+    compile group: 'io.appium', name: 'java-client', version: '5.0.0-BETA1'
+    compile group: 'log4j', name: 'log4j', version: '1.2.17'
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    compile group: 'io.qameta.allure', name: 'allure-java-commons', version: '2.6.0'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'
+    compile group: 'org.testng', name: 'testng', version: '6.14.3'
+    compile group: 'io.qameta.allure', name: 'allure-testng', version: '2.0-BETA20'
+    compile group: 'com.squareup.okhttp3', name: 'okhttp', version: '3.12.0'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.7'
+}
+
+test{
+    useTestNG()
+
+    testLogging {
+        events "failed"
+        exceptionFormat "short"
+
+        debug {
+            events "started", "skipped", "failed"
+            exceptionFormat "full"
+        }
+
+        info.events = ["failed", "skipped"]
+    }
+}
+
+task testSuite(type: JavaExec, dependsOn: 'classes') {
+    jvmArgs "-javaagent:${configurations.agent.singleFile}"
+    main = 'org.testng.TestNG'
+    classpath = files("./",
+            project.sourceSets.main.compileClasspath,
+            project.sourceSets.test.compileClasspath,
+            project.sourceSets.main.runtimeClasspath,
+            project.sourceSets.test.runtimeClasspath)
+    //args = ["-parallel",  "methodes", "-threadcount", "1", "-d", "./build/test-output", "TestNG.xml"]
+    args = ["-d", "./build/test-output", "TestNG.xml"]
+
+}
+task setEnvironment (type: Copy) {
+    from "src/main/resources"
+    into "build/allure-results"
+    include "environment.properties"
+}
+
+task generateAllureReport(type: Exec) {
+    commandLine 'allure', 'generate', 'build/allure-results', '-v', '2.6.0', '-o', 'build/reports/allure'
+}
+
+task myAllureServe(type : Exec){
+    commandLine 'gradle','allureServe'
+}
+
+test.finalizedBy(setEnvironment)
+setEnvironment.finalizedBy(testSuite)
+testSuite.finalizedBy(generateAllureReport)
+generateAllureReport.finalizedBy(myAllureServe)

@@ -84,5 +84,4 @@ $ allure
 
 ## Support
 If you are having any question, please let me know.
-- slack : chouaib saadi
-- email : chouaib.saadi@schibsted.com
+- email : c.saadi81@gmail.com

@@ -7,6 +7,7 @@
         <!--<class name="tests.StartAppiumService" />-->
         <class name="tests.avito.CreateAvitoAndroidDriver"/>
         <class name="tests.avito.LoadingAvitoApp" />
+		<class name="tests.avito.test" />
     </classes>
 </test>
 </suite>
